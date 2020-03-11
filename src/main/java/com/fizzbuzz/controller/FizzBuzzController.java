@@ -1,5 +1,7 @@
 package com.fizzbuzz.controller;
 
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +15,7 @@ public class FizzBuzzController {
 	private FizzBuzzService fizzBuzzService;
 	
 	@GetMapping(path = "/fizzbuzz")
-	public void fizzBussTask() {
+	public void fizzBussTask() throws IOException{
 		fizzBuzzService.printFizzBuzz();
 	}
 	

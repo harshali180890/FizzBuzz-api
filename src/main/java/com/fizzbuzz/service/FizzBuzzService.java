@@ -1,5 +1,7 @@
 package com.fizzbuzz.service;
 
+import java.io.IOException;
+
 /**
  * @author harshali
  * 
@@ -7,5 +9,5 @@ package com.fizzbuzz.service;
  */
 public interface FizzBuzzService {
 
-	void printFizzBuzz();
+	void printFizzBuzz() throws IOException;
 }
