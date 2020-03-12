@@ -9,5 +9,8 @@ import java.io.IOException;
  */
 public interface FizzBuzzService {
 
+	/**
+	 * @throws IOException
+	 */
 	void printFizzBuzz() throws IOException;
 }
